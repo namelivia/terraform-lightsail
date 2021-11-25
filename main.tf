@@ -16,7 +16,3 @@ resource "aws_lightsail_instance" "email" {
   blueprint_id= "ubuntu_18_04"
   bundle_id= "small_2_0"
 }
-
-output "ip" {
-  value = aws_lightsail_instance.email.public_ip_address
-}
