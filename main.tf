@@ -1,8 +1,3 @@
-provider "aws" {
-  region = "eu-west-3"
-  shared_credentials_file = "${var.shared_credentials_file}"
-}
-
 resource "aws_lightsail_key_pair" "deployer" {
   name   = "${var.instance_name}-key"
   public_key = "${var.ssh_key}"
